@@ -1,0 +1,29 @@
+<apex:page extensions="FeedbackCtrl" standardController="Feedback__c" standardStylesheets="false" sidebar="false" showHeader="false">
+
+<style>
+    .progress{
+        padding: 5px 10px 5px 10px;
+        moz-border-radius: 10px;
+        color: white;
+        font-weight: 700;
+        margin-left: 40%;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+        background:{!color};
+        box-shadow: 0px 1px 8px {!color};
+    }
+</style>
+
+<div style="width:100%;text-align: center;">
+    <div class="progress" >
+        <span style="position: absolute;margin-top: 40px;margin-left: -20px;">{!score}%</span>
+    </div>
+    <div style="text-align: center;color:{!color};margin-top: 10px;">
+        {!fbck.Sentiment__c}
+    </div>
+</div>
+
+</apex:page>
